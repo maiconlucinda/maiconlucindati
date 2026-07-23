@@ -1,0 +1,33 @@
+# Maicon Lucinda
+
+> Cloud Support Engineer, Security at AWS. Cloud security, network security, incident response, and threat detection. Based in Dublin, Ireland.
+
+## About
+
+Personal website of Maicon Lucinda, covering cloud security, network security, incident response, and hands-on security projects.
+
+## Sections
+
+- [Home](https://maiconlucinda.github.io/): About, expertise, and certifications.
+- [Portfolio](https://maiconlucinda.github.io/portfolio/): Security and networking projects with code, descriptions, and demos.
+- [Blog](https://maiconlucinda.github.io/blog/): Notes on cloud security, network security, and lessons learned on the job.
+
+## Certifications
+
+- AWS Certified Solutions Architect – Associate
+- CompTIA Security+
+- Check Point Certified Security Expert (CCSE)
+- Check Point Certified Security Administrator (CCSA)
+- Palo Alto Networks Certified Network Security Administrator (PCNSA)
+- F5 Certified Administrator, BIG-IP (101 & 201)
+- Cisco Certified Network Associate (CCNA)
+
+## Links
+
+- [Homepage](https://maiconlucinda.github.io/)
+- [Portfolio](https://maiconlucinda.github.io/portfolio/)
+- [Blog](https://maiconlucinda.github.io/blog/)
+- [RSS Feed](https://maiconlucinda.github.io/blog/feed.xml)
+- [LinkedIn](https://www.linkedin.com/in/maiconlucinda/)
+- [GitHub](https://github.com/maiconlucinda)
+- [TryHackMe](https://tryhackme.com/p/maiconlucinda)

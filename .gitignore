@@ -1,0 +1,28 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+*.gem
+.bundle
+
+# Ruby
+Gemfile.lock
+vendor/
+
+# Chirpy
+assets/js/dist
+_javascript
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+package-lock.json
