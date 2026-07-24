@@ -5,9 +5,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:       #F5F2EC;
-  --bg-alt:   #EDEAE0;
-  --bg-dark:  #1A1814;
+  --bg:       #F2F4F1;
+  --bg-alt:   #E6EAE6;
+  --bg-dark:  #12191A;
   --text:     #1A1814;
   --text-mid: #4A4540;
   --muted:    #564F47;
@@ -67,7 +67,7 @@ nav {
   top: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: rgba(245, 242, 236, 0.92);
+  background: rgba(242, 244, 241, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-lt);
