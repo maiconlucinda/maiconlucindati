@@ -9,7 +9,7 @@ This site is built and maintained through a collaborative workflow with an AI as
 ## Tech Stack
 
 - **Stack**: Pure HTML, CSS, and JavaScript
-- **Hosting**: GitHub Pages
+- **Hosting**: Vercel
 - **Fonts**: Cormorant Garant + DM Sans
 
 ## Site Structure
@@ -20,7 +20,7 @@ This site is built and maintained through a collaborative workflow with an AI as
 
 ## Live Site
 
-🌐 **[maiconlucinda.github.io](https://maiconlucinda.github.io/)**
+🌐 **[maiconlucinda.vercel.app](https://maiconlucinda.vercel.app/)**
 
 ---
 
