@@ -187,6 +187,10 @@ nav {
 }
 .challenge-section .project-grid {
   padding-top: 0;
+  grid-template-columns: 1fr;
+}
+.challenge-section .project-media {
+  aspect-ratio: 16 / 9;
 }
 .challenge-heading {
   max-width: var(--max-w);
@@ -254,6 +258,9 @@ nav {
 
 .project-body {
   padding: 1.5rem 1.75rem 1.75rem;
+}
+.challenge-section .project-desc {
+  max-width: 640px;
 }
 .project-title {
   font-family: var(--font-display);
