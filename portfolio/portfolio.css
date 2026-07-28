@@ -177,6 +177,44 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
 }
+
+/* ─── CHALLENGE SECTION (100 Days of Code) ──────────────────────
+   Sits below the featured project grid, styled a notch quieter so
+   older/simpler practice projects read as a log, not the headline. */
+.challenge-section {
+  border-top: 1px solid var(--border-lt);
+  padding-top: clamp(3rem, 6vw, 4rem);
+}
+.challenge-section .project-grid {
+  padding-top: 0;
+}
+.challenge-heading {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+  margin-bottom: 2rem;
+}
+.challenge-heading h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--text);
+}
+.challenge-heading p {
+  margin-top: 0.5rem;
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  max-width: 560px;
+  line-height: 1.7;
+}
+.challenge-heading a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+}
+.challenge-heading a:hover {
+  text-decoration-color: var(--accent);
+}
 .project-card {
   border: 1px solid var(--border);
   background: var(--bg);

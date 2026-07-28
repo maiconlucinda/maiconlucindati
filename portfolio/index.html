@@ -73,19 +73,17 @@
       and working. Each one links to its code — more get added as I ship them.</p>
   </header>
 
-  <!-- ── PROJECT GRID ─────────────────────────────────────── -->
-  <section class="project-grid" aria-label="Projects">
-
-    <!-- ✏️ TO ADD A NEW PROJECT: copy a project-card block and paste it here.
-         Replace the media (img/gif), title, description, tags, and links.
-         For a GIF demo, just point the <img> src at a .gif file — it will autoplay. -->
+  <!-- ── FEATURED PROJECTS ─────────────────────────────────── -->
+  <!-- ✏️ TO ADD A NEW FEATURED PROJECT: copy a project-card block and paste it
+       ABOVE the placeholder card, so newer/bigger projects stay at the top. -->
+  <section class="project-grid" aria-label="Featured Projects">
 
     <div class="project-card reveal placeholder-card">
       <div class="project-media placeholder-media" aria-hidden="true">
         <span>Coming soon</span>
       </div>
       <div class="project-body">
-        <h2 class="project-title">Your first project goes here</h2>
+        <h2 class="project-title">Your next project goes here</h2>
         <p class="project-desc">Add a screenshot or GIF of the project in action, a short description of what it does
           and why you built it, the stack you used, and a link to the repo or a live demo.</p>
         <div class="project-tags">
@@ -116,6 +114,56 @@
     </div>
     -->
 
+  </section>
+
+  <!-- ── 100 DAYS OF CODE ────────────────────────────────────
+       This whole section sits below Featured Projects, so as bigger
+       projects get added above, this practice log naturally sinks down.
+
+       ✏️ TO ADD A NEW DAY: copy a project-card block and paste it right
+       after this comment, so the newest day stays on top WITHIN this
+       section (older days sink toward the bottom of the grid).
+       Folder names use 3-digit padding to sort correctly on GitHub:
+       Day001, Day002, ... Day010, ... Day100. -->
+  <section class="challenge-section" aria-label="100 Days of Code">
+    <div class="challenge-heading">
+      <h2>100 Days of Code</h2>
+      <p>Daily practice log — small scripts building up core Python skills. Code for each day lives in the
+        <a href="https://github.com/maiconlucinda/100DaysOfCode" target="_blank" rel="noopener">100DaysOfCode</a>
+        repo.
+      </p>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card reveal">
+        <div class="project-media">
+          <img src="images/band-name-generator.gif"
+            alt="Terminal demo of the Band Name Generator asking for a city and a pet name, then printing the resulting band name"
+            loading="lazy" width="640" height="400">
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Day 001 — Band Name Generator</h2>
+          <p class="project-desc">A terminal script that asks for the city you grew up in and your pet's name, then
+            combines them into a band name. First script practicing <code>print()</code> and <code>input()</code> in
+            Python.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/maiconlucinda/100DaysOfCode/tree/main/Day001" class="project-link"
+              target="_blank" rel="noopener">
+              Code
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                <path d="M1 9L9 1M9 1H3M9 1V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- ── FOOTER ───────────────────────────────────────────── -->
