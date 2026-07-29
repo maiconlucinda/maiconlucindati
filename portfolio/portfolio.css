@@ -231,7 +231,7 @@ nav {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: var(--bg-dark);
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
