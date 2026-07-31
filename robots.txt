@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maiconlucinda.vercel.app/sitemap.xml
+Sitemap: https://maiconlucinda.com/sitemap.xml

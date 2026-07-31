@@ -1,6 +1,6 @@
 /* ─── BLOG STYLES ─────────────────────────────────────────────────
    Shared across blog listing and individual posts.
-   Design tokens inherited from maiconlucinda.vercel.app main site.
+   Design tokens inherited from maiconlucinda.com main site.
    ─────────────────────────────────────────────────────────────── */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

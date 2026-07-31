@@ -20,7 +20,7 @@ This site is built and maintained through a collaborative workflow with an AI as
 
 ## Live Site
 
-🌐 **[maiconlucinda.vercel.app](https://maiconlucinda.vercel.app/)**
+🌐 **[maiconlucinda.com](https://maiconlucinda.com/)**
 
 ---
 

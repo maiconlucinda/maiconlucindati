@@ -8,9 +8,9 @@ Personal website of Maicon Lucinda, covering cloud security, network security, i
 
 ## Sections
 
-- [Home](https://maiconlucinda.vercel.app/): About, expertise, and certifications.
-- [Portfolio](https://maiconlucinda.vercel.app/portfolio/): Security and networking projects with code, descriptions, and demos.
-- [Blog](https://maiconlucinda.vercel.app/blog/): Notes on cloud security, network security, and lessons learned on the job.
+- [Home](https://maiconlucinda.com/): About, expertise, and certifications.
+- [Portfolio](https://maiconlucinda.com/portfolio/): Security and networking projects with code, descriptions, and demos.
+- [Blog](https://maiconlucinda.com/blog/): Notes on cloud security, network security, and lessons learned on the job.
 
 ## Certifications
 
@@ -24,10 +24,10 @@ Personal website of Maicon Lucinda, covering cloud security, network security, i
 
 ## Links
 
-- [Homepage](https://maiconlucinda.vercel.app/)
-- [Portfolio](https://maiconlucinda.vercel.app/portfolio/)
-- [Blog](https://maiconlucinda.vercel.app/blog/)
-- [RSS Feed](https://maiconlucinda.vercel.app/blog/feed.xml)
+- [Homepage](https://maiconlucinda.com/)
+- [Portfolio](https://maiconlucinda.com/portfolio/)
+- [Blog](https://maiconlucinda.com/blog/)
+- [RSS Feed](https://maiconlucinda.com/blog/feed.xml)
 - [LinkedIn](https://www.linkedin.com/in/maiconlucinda/)
 - [GitHub](https://github.com/maiconlucinda)
 - [TryHackMe](https://tryhackme.com/p/maiconlucinda)
