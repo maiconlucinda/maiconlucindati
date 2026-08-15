@@ -670,10 +670,20 @@
       padding: 1.25rem 1.5rem;
       background: var(--bg);
       transition: border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
     }
 
     .cert-item:hover {
       border-color: var(--accent);
+    }
+
+    .cert-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
     }
 
     .cert-name {
@@ -682,7 +692,6 @@
       font-weight: 500;
       color: var(--text);
       line-height: 1.3;
-      margin-bottom: 0.35rem;
     }
 
     .cert-issuer {
@@ -690,6 +699,31 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--muted);
+    }
+
+    .cert-status {
+      flex-shrink: 0;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .cert-status.is-earned {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .cert-status.is-progress {
+      color: var(--muted);
+      border-color: var(--border);
+      background: var(--bg-alt);
+    }
+
+    .cert-item.in-progress {
+      opacity: 0.75;
     }
 
     /* ─── SPEAKING ───────────────────────────────────────── */
@@ -1137,36 +1171,74 @@
       <span class="label reveal" id="certifications-heading">Certifications</span>
     </div>
     <div class="cert-grid">
-      <div class="cert-item reveal">
-        <div class="cert-name">AWS Certified AI Practitioner</div>
+      <div class="cert-item reveal in-progress">
+        <div class="cert-top">
+          <div class="cert-name">AWS Certified Security – Specialty</div>
+          <span class="cert-status is-progress">In progress</span>
+        </div>
         <div class="cert-issuer">Amazon Web Services</div>
       </div>
-      <div class="cert-item reveal reveal-delay-1">
-        <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
-        <div class="cert-issuer">Amazon Web Services</div>
-      </div>
-      <div class="cert-item reveal reveal-delay-2">
-        <div class="cert-name">CompTIA Security+</div>
+      <div class="cert-item reveal reveal-delay-1 in-progress">
+        <div class="cert-top">
+          <div class="cert-name">CompTIA SecAI+</div>
+          <span class="cert-status is-progress">In progress</span>
+        </div>
         <div class="cert-issuer">CompTIA</div>
       </div>
+      <div class="cert-item reveal reveal-delay-2">
+        <div class="cert-top">
+          <div class="cert-name">AWS Certified AI Practitioner</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">Amazon Web Services</div>
+      </div>
       <div class="cert-item reveal reveal-delay-3">
-        <div class="cert-name">Check Point Certified Security Expert (CCSE)</div>
-        <div class="cert-issuer">Check Point</div>
+        <div class="cert-top">
+          <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">Amazon Web Services</div>
       </div>
       <div class="cert-item reveal">
-        <div class="cert-name">Check Point Certified Security Administrator (CCSA)</div>
-        <div class="cert-issuer">Check Point</div>
+        <div class="cert-top">
+          <div class="cert-name">CompTIA Security+</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">CompTIA</div>
       </div>
       <div class="cert-item reveal reveal-delay-1">
-        <div class="cert-name">Palo Alto Networks Certified Network Security Administrator (PCNSA)</div>
-        <div class="cert-issuer">Palo Alto Networks</div>
+        <div class="cert-top">
+          <div class="cert-name">Check Point Certified Security Expert (CCSE)</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">Check Point</div>
       </div>
       <div class="cert-item reveal reveal-delay-2">
-        <div class="cert-name">F5 Certified Administrator, BIG-IP (101 &amp; 201)</div>
-        <div class="cert-issuer">F5</div>
+        <div class="cert-top">
+          <div class="cert-name">Check Point Certified Security Administrator (CCSA)</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">Check Point</div>
       </div>
       <div class="cert-item reveal reveal-delay-3">
-        <div class="cert-name">Cisco Certified Network Associate (CCNA)</div>
+        <div class="cert-top">
+          <div class="cert-name">Palo Alto Networks Certified Network Security Administrator (PCNSA)</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">Palo Alto Networks</div>
+      </div>
+      <div class="cert-item reveal">
+        <div class="cert-top">
+          <div class="cert-name">F5 Certified Administrator, BIG-IP (101 &amp; 201)</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
+        <div class="cert-issuer">F5</div>
+      </div>
+      <div class="cert-item reveal reveal-delay-1">
+        <div class="cert-top">
+          <div class="cert-name">Cisco Certified Network Associate (CCNA)</div>
+          <span class="cert-status is-earned">Earned</span>
+        </div>
         <div class="cert-issuer">Cisco</div>
       </div>
     </div>
