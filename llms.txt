@@ -14,6 +14,7 @@ Personal website of Maicon Lucinda, covering cloud security, network security, i
 
 ## Certifications
 
+- AWS Certified AI Practitioner
 - AWS Certified Solutions Architect – Associate
 - CompTIA Security+
 - Check Point Certified Security Expert (CCSE)
