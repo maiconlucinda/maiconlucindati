@@ -227,55 +227,6 @@ nav {
   gap: 2.5rem;
 }
 
-/* ─── STACK NAV (jump links to each category) ───────────────── */
-.stack-nav {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 0 var(--pad) clamp(2rem, 4vw, 3rem);
-  display: flex;
-  gap: 0.5rem 1.75rem;
-  flex-wrap: wrap;
-}
-.stack-nav a {
-  text-decoration: none;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--muted);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 3px;
-  transition:
-    color 0.2s,
-    border-color 0.2s;
-}
-.stack-nav a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
-/* ─── STACK SECTION (one per language/framework) ────────────── */
-.stack-section {
-  border-top: 1px solid var(--border-lt);
-  padding-top: clamp(2.5rem, 5vw, 3.5rem);
-  scroll-margin-top: var(--nav-h);
-}
-.stack-section .project-grid {
-  padding-top: 0;
-}
-.stack-heading {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 0 var(--pad);
-  margin-bottom: 1.75rem;
-}
-.stack-heading h2 {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 500;
-  color: var(--text);
-}
-
 /* ─── CHALLENGE SECTION (100 Days of Code) ──────────────────────
    Sits below the featured project grid, styled a notch quieter so
    older/simpler practice projects read as a log, not the headline. */

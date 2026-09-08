@@ -195,136 +195,33 @@
       and working. Each one links to its code — more get added as I ship them.</p>
   </header>
 
-  <!-- ── PROJECT CATEGORIES ────────────────────────────────────
-       One section per stack. Each starts with a dashed "Coming soon"
-       placeholder — when you have a real project for that stack, delete
-       the placeholder-card block and paste a real project-card in its
-       place (there's a commented example inside the Python section
-       showing the exact markup to copy). Newer projects go on top
-       within their own section. -->
-  <nav class="stack-nav" aria-label="Jump to project category">
-    <a href="#python-projects">Python</a>
-    <a href="#react-projects">React</a>
-    <a href="#javascript-projects">JavaScript</a>
-    <a href="#react-native-projects">React Native</a>
-  </nav>
+  <!-- ── FEATURED PROJECTS ─────────────────────────────────── -->
+  <!-- ✏️ TO ADD A NEW FEATURED PROJECT: uncomment this section and paste a
+       project-card block below. Newer/bigger projects go on top; this
+       section always stays above "100 Days of Code".
 
-  <section class="stack-section" id="python-projects" aria-label="Python Projects">
-    <div class="stack-heading">
-      <h2>Python</h2>
-    </div>
-    <div class="project-grid">
-
-      <!--
-      <div class="project-card reveal">
-        <div class="project-media">
-          <img src="images/example-project.gif" alt="Demo of Example Project showing X" loading="lazy" width="640" height="400">
+  <section class="project-grid" aria-label="Featured Projects">
+    <div class="project-card reveal">
+      <div class="project-media">
+        <img src="images/example-project.gif" alt="Demo of Example Project showing X" loading="lazy" width="640" height="400">
+      </div>
+      <div class="project-body">
+        <h2 class="project-title">Example Project</h2>
+        <p class="project-desc">A short, specific description: what problem it solves, what it does, and any interesting detail about how it works.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">AWS</span>
         </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h2 class="project-title">Example Project</h2>
-            <div class="project-meta">
-              <div class="project-tags">
-                <span class="project-tag">Python</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/maiconlucinda/example-project" class="project-link" target="_blank" rel="noopener">
-                  Code
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9L9 1M9 1H3M9 1V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="project-desc">A short, specific description: what problem it solves, what it does, and any interesting detail about how it works.</p>
+        <div class="project-links">
+          <a href="https://github.com/maiconlucinda/example-project" class="project-link" target="_blank" rel="noopener">
+            Code
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 9L9 1M9 1H3M9 1V7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
-      -->
-
-      <div class="project-card reveal placeholder-card">
-        <div class="project-media placeholder-media" aria-hidden="true">
-          <span>Coming soon</span>
-        </div>
-        <div class="project-body">
-          <h2 class="project-title">Your next Python project goes here</h2>
-          <p class="project-desc">A standalone Python project, bigger than the daily 100 Days of Code scripts —
-            with a screenshot or GIF, a description of what it does, and a link to the repo or live demo.</p>
-          <div class="project-tags">
-            <span class="project-tag">Placeholder</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
-
-  <section class="stack-section" id="react-projects" aria-label="React Projects">
-    <div class="stack-heading">
-      <h2>React</h2>
-    </div>
-    <div class="project-grid">
-
-      <div class="project-card reveal placeholder-card">
-        <div class="project-media placeholder-media" aria-hidden="true">
-          <span>Coming soon</span>
-        </div>
-        <div class="project-body">
-          <h2 class="project-title">Your first React project goes here</h2>
-          <p class="project-desc">A React app or component built for practice or a real use case — with a
-            screenshot or GIF, a description of what it does, and a link to the repo or live demo.</p>
-          <div class="project-tags">
-            <span class="project-tag">Placeholder</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="stack-section" id="javascript-projects" aria-label="JavaScript Projects">
-    <div class="stack-heading">
-      <h2>JavaScript</h2>
-    </div>
-    <div class="project-grid">
-
-      <div class="project-card reveal placeholder-card">
-        <div class="project-media placeholder-media" aria-hidden="true">
-          <span>Coming soon</span>
-        </div>
-        <div class="project-body">
-          <h2 class="project-title">Your first JavaScript project goes here</h2>
-          <p class="project-desc">A vanilla JS or Node project — with a screenshot or GIF, a description of what
-            it does, and a link to the repo or live demo.</p>
-          <div class="project-tags">
-            <span class="project-tag">Placeholder</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="stack-section" id="react-native-projects" aria-label="React Native Projects">
-    <div class="stack-heading">
-      <h2>React Native</h2>
-    </div>
-    <div class="project-grid">
-
-      <div class="project-card reveal placeholder-card">
-        <div class="project-media placeholder-media" aria-hidden="true">
-          <span>Coming soon</span>
-        </div>
-        <div class="project-body">
-          <h2 class="project-title">Your first React Native project goes here</h2>
-          <p class="project-desc">A mobile app built with React Native — with a screenshot or GIF, a description
-            of what it does, and a link to the repo or app store listing.</p>
-          <div class="project-tags">
-            <span class="project-tag">Placeholder</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+  -->
 
 
   <!-- ── 100 DAYS OF CODE ────────────────────────────────────
