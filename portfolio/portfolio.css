@@ -2,29 +2,37 @@
    Design tokens match the main maiconlucinda.com site.
    ─────────────────────────────────────────────────────────────── */
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
-  --bg:       #F2F4F1;
-  --bg-alt:   #E6EAE6;
-  --bg-dark:  #12191A;
-  --text:     #1A1814;
-  --text-mid: #4A4540;
-  --muted:    #564F47;
-  --accent:   #1F5C56;
-  --accent-lt:#2E7A6F;
-  --border:   #C4BDB0;
-  --border-lt:#DDD7CB;
+  --bg: #f2f4f1;
+  --bg-alt: #e6eae6;
+  --bg-dark: #12191a;
+  --text: #1a1814;
+  --text-mid: #4a4540;
+  --muted: #564f47;
+  --accent: #1f5c56;
+  --accent-lt: #2e7a6f;
+  --border: #c4bdb0;
+  --border-lt: #ddd7cb;
 
-  --font-display: 'Cormorant Garant', Georgia, serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-display: "Cormorant Garant", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
 
   --nav-h: 72px;
   --max-w: 1100px;
-  --pad:   clamp(1.5rem, 5vw, 4rem);
+  --pad: clamp(1.5rem, 5vw, 4rem);
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-body);
@@ -35,8 +43,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { display: block; max-width: 100%; }
-a { color: inherit; }
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+}
 
 .label {
   font-size: 1.05rem;
@@ -51,15 +64,23 @@ a { color: inherit; }
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
 
 /* ─── NAV ────────────────────────────────────────────────────── */
 nav {
@@ -107,17 +128,27 @@ nav {
   position: relative;
 }
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -2px; left: 0;
-  width: 0; height: 1px;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
   background: var(--accent);
   transition: width 0.25s ease;
 }
-.nav-links a:hover { color: var(--text); }
-.nav-links a:hover::after { width: 100%; }
-.nav-links a.active { color: var(--text); }
-.nav-links a.active::after { width: 100%; }
+.nav-links a:hover {
+  color: var(--text);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-links a.active {
+  color: var(--text);
+}
+.nav-links a.active::after {
+  width: 100%;
+}
 
 /* ─── NAV TOGGLE (mobile) ────────────────────────────────────── */
 .nav-toggle {
@@ -137,14 +168,32 @@ nav {
   width: 100%;
   height: 2px;
   background: var(--text);
-  transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    top 0.25s ease;
 }
-.nav-toggle-bar:nth-child(1) { top: 0; }
-.nav-toggle-bar:nth-child(2) { top: 9px; background: var(--accent); }
-.nav-toggle-bar:nth-child(3) { top: 18px; }
-.nav-toggle.is-open .nav-toggle-bar:nth-child(1) { top: 9px; transform: rotate(45deg); }
-.nav-toggle.is-open .nav-toggle-bar:nth-child(2) { opacity: 0; }
-.nav-toggle.is-open .nav-toggle-bar:nth-child(3) { top: 9px; transform: rotate(-45deg); }
+.nav-toggle-bar:nth-child(1) {
+  top: 0;
+}
+.nav-toggle-bar:nth-child(2) {
+  top: 9px;
+  background: var(--accent);
+}
+.nav-toggle-bar:nth-child(3) {
+  top: 18px;
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+  top: 9px;
+  transform: rotate(-45deg);
+}
 
 /* ─── HEADER ─────────────────────────────────────────────────── */
 .portfolio-header {
@@ -176,6 +225,55 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+}
+
+/* ─── STACK NAV (jump links to each category) ───────────────── */
+.stack-nav {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad) clamp(2rem, 4vw, 3rem);
+  display: flex;
+  gap: 0.5rem 1.75rem;
+  flex-wrap: wrap;
+}
+.stack-nav a {
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 3px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.stack-nav a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ─── STACK SECTION (one per language/framework) ────────────── */
+.stack-section {
+  border-top: 1px solid var(--border-lt);
+  padding-top: clamp(2.5rem, 5vw, 3.5rem);
+  scroll-margin-top: var(--nav-h);
+}
+.stack-section .project-grid {
+  padding-top: 0;
+}
+.stack-heading {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+  margin-bottom: 1.75rem;
+}
+.stack-heading h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--text);
 }
 
 /* ─── CHALLENGE SECTION (100 Days of Code) ──────────────────────
@@ -225,7 +323,9 @@ nav {
   overflow: hidden;
   transition: border-color 0.2s;
 }
-.project-card:hover { border-color: var(--accent); }
+.project-card:hover {
+  border-color: var(--accent);
+}
 
 .project-media {
   aspect-ratio: 16 / 10;
@@ -325,7 +425,9 @@ nav {
   padding-bottom: 2px;
   transition: border-color 0.2s;
 }
-.project-link:hover { border-color: var(--accent); }
+.project-link:hover {
+  border-color: var(--accent);
+}
 
 /* ─── FOOTER ─────────────────────────────────────────────────── */
 footer {
@@ -346,14 +448,21 @@ footer {
   color: var(--muted);
   letter-spacing: 0.04em;
 }
-.footer-copy strong { color: var(--text-mid); font-weight: 500; }
+.footer-copy strong {
+  color: var(--text-mid);
+  font-weight: 500;
+}
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .project-grid { grid-template-columns: 1fr; }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 860px) {
-  .nav-toggle { display: block; }
+  .nav-toggle {
+    display: block;
+  }
 
   .nav-links {
     display: none;
@@ -370,25 +479,33 @@ footer {
     border-bottom: 1px solid var(--accent);
   }
 
-  .nav-links.is-open { display: flex; }
+  .nav-links.is-open {
+    display: flex;
+  }
 
-  .nav-links li { border-bottom: 1px solid rgba(197, 176, 138, 0.15); }
-  .nav-links li:last-child { border-bottom: none; }
+  .nav-links li {
+    border-bottom: 1px solid rgba(197, 176, 138, 0.15);
+  }
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
 
   .nav-links a {
     display: flex;
     align-items: center;
     padding: 1rem var(--pad);
-    color: #DDD7CB;
+    color: #ddd7cb;
     letter-spacing: 0.08em;
   }
   .nav-links a::before {
-    content: '>';
+    content: ">";
     color: var(--accent-lt);
     margin-right: 0.6rem;
     font-weight: 700;
   }
-  .nav-links a::after { display: none; }
+  .nav-links a::after {
+    display: none;
+  }
   .nav-links a:hover,
   .nav-links a.active {
     color: #fff;
